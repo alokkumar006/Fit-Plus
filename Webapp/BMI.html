@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <h5 >BMI Calculator</h5>
+    </head>
+    <body>
+        <div class="calc">
+        <div class="form1">  
+            <div>
+                <h1>Enter Your Weight in Kg : </h1>
+            <input type="text" name="weight" class="inputtext" id="enter1"   placeholder="weight in kg" required>
+            </div>
+            <div>
+                <h1>Enter Your Height in meter : </h1>
+                <input type="text" name="height in m^2" class="inputtext" id="enter2"  placeholder="height in m^2"  >
+            </div>
+            <div>
+                <button class="btn1" id="btn2" onclick="myFunction()" >Calculate</button>
+            </div>   
+        </div>
+        <div class="form2"> 
+            
+            <div >
+                <h2>RESULT: </h2>
+                <p name="para" class="output" id="enter3"  ></p>
+            </div>
+            <div>
+                <h3>-> If your BMI is between 18.5-24.9 then you have normal weight. </h3>
+                <h3>-> If your BMI is between 25-29.9 then you are overweight.</h3>
+                <h3>-> If your BMI is more than 30 then you are obese.</h3>
+            </div>
+            <div>
+                <button class="btn4" onclick="color()">ok</button>
+            </div>
+        </div>
+        </div>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>
+<script>
+        function myFunction(){
+        let a=document.getElementById("enter1");
+        let b=document.getElementById("enter2");
+        const btn=document.getElementById("btn2")
+        const c=document.getElementById("enter3");
+        let d=(a.value/(b.value*b.value)).toFixed(2);
+        document.getElementById('enter3').innerHTML=d;
+        return d;
+        }
+        function color(){
+            window.location.href="bmi.html";
+        }
+    
+</script>
+
+   
+  
+         

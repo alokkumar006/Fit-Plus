@@ -1,5 +1,6 @@
 # Fit-Plus
 An ai based fitness trainer.
+
 1.User Profile & BMI Calculator: Users create a profile by inputting their height, weight, age, and fitness goals. The app will calculates the user's BMI and provides insights on their current fitness level.
 
 2.Workout Plans: The app will generates customized workout plans based on the user's profile and fitness goals. Users can choose from various workout types (cardio, strength, flexibility) and set workout schedules. Including Nutrition Guidance:
